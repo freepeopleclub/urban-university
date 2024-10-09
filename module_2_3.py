@@ -15,9 +15,3 @@ while my_index < len(my_list):
     if my_list[my_index] < 0:
         break
     my_index = my_index + 1
-
-
-
-#        my_list[my_index] >= 0:
- #   print(my_list[my_index])
-  #  my_index = my_index + 1
