@@ -58,8 +58,6 @@ gk_1 = House("ЖК Эльбрус", 25)
 gk_2 = House("ЖК Горизонт", 35)
 gk_3 = House("ЖК Алые паруса", 150)
 
-gk_1.__str__()
-gk_2.__str__()
 print()
 print(f'Количество этажей "{gk_1.name}" равно "{gk_2.name}". Это {gk_1 == gk_2}')
 print(f'Количество этажей "{gk_1.name}" меньше, или равно "{gk_2.name}". Это {gk_1 <= gk_2}')
@@ -67,13 +65,14 @@ print(f'Количество этажей "{gk_1.name}" больше "{gk_2.name
 print(f'Количество этажей "{gk_1.name}" больше, или равно "{gk_2.name}". Это {gk_1 >= gk_2}')
 print(f'Количество этажей "{gk_1.name}" не равно "{gk_2.name}". Это {gk_1 != gk_2}')
 print()
-gk_1.__add__(10)
-gk_2.__add__(55)
+gk_1 = gk_1 + 10
+gk_2 = gk_2 + 55
+
 print(f'Теперь в "{gk_1.name}" {gk_1.number_of_floors} этажей')
 print(f'Теперь в "{gk_2.name}" {gk_2.number_of_floors} этажей')
-gk_1.__radd__(13)
+gk_1 = gk_1 + 13
 print(f'Теперь в "{gk_1.name}" {gk_1.number_of_floors} этажей')
-gk_3.__radd__(11)
+gk_3 = gk_3 + 33
 print(f'Теперь в "{gk_3.name}" {gk_3.number_of_floors} этажей')
-gk_3.__radd__(14)
+gk_3 = gk_3 + 14
 print(f'Теперь в "{gk_3.name}" {gk_3.number_of_floors} этажей')
